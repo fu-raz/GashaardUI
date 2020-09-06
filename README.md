@@ -15,6 +15,12 @@ Dit script is mijn eerste script dat ik heb geschreven voor een ESP32/Arduino di
 ## Waar gebruik je dit dus voor?
 Nou wat het heel simpelgezegd is, is een apparaat waarmee je een motortje linksom of rechtsom kunt laten draaien voor een bepaalde tijd. Hiervoor gebruik ik een DC Motorcontroller die de '+' en '-' kan omdraaien en dus een motortje zo kan laten draaien (linksom of rechtsom). Hoe lang dit is, wordt uitgedrukt in milliseconden, maar de interface maakt het mogelijk om percentages te kiezen. Waarbij we een waarde vaststellen voor hoe lang draaien 100% is en vanuit daar dus een percentage omzetten naar een aantal milliseconden. Dus stel we stellen de 100% waarde in op 2000 ms draaien, dan is 50% dus 1000 ms draaien. Het aansturen hiervan gebeurt via een website die gehost wordt door een webserver op de ESP32/Arduino, of via Google Assistent -> IFTTT -> Adafruit -> MQTT -> ESP32/Arduino.
 
+## Dus dit is alleen voor een gashaard?
+Niet echt eigenlijk. Wat ik in dit script doe is een webserver aanmaken met een responsive interface, waarmee je verschillende functies kunt aansturen. Dat stuk zou je kunnen gebruiken voor iets anders. Ik laat zien hoe ik een commando vanaf Google Assistent verwerk, dat kun je gebruiken. En ik laat een motortje bewegen op basis van tijd/percentage. Dat zou je natuurlijk ook voor een kraan/pomp/druppelaar/weet ik het wat kunnen gebruiken.
+
+## Waarom noem je het dan GashaardUI?
+Ja weet ik veel.
+
 ## Welke libraries gebruik je?
 * [PangolinMQTT](https://github.com/philbowles/PangolinMQTT)
 * [AsyncTCP](https://github.com/me-no-dev/AsyncTCP)
