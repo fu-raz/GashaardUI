@@ -7,7 +7,10 @@ Met een kleine dank aan Jerry Schun die mij m'n eerste Arduino opstuurde.
 Dit script is mijn eerste script dat ik heb geschreven voor een ESP32/Arduino ding. Het is geboren uit pure noodzaak. De aansturing van onze oude gashaard was kapot en ik kon nergens een vervangende controller + afstandsbediening vinden.
 
 ## Wat heb ik voor hardware nodig?
-Ik heb hiervoor een WeMos ESP32 (of Geekreit van Banggood) gebruikt.
+* Een ESP32 (Bijv. WeMos of Geekreit van [Banggood](https://www.banggood.com/custlink/3vmECguVUU)\* / [AliExpress](https://s.click.aliexpress.com/e/_dYMXFWZ)\*)
+* Een DC Motorcontroller (Bijv. een L298N van [Banggood](https://www.banggood.com/custlink/vGKRCeft2n)\* / [AliExpress](https://s.click.aliexpress.com/e/_dTC2QSl)\*)
+
+\* Dit zijn affiliate links, je mag ook gewoon zelf naar Banggood of AliExpress browsen
 
 ## Waar gebruik je dit dus voor?
 Nou wat het heel simpelgezegd is, is een apparaat waarmee je een motortje linksom of rechtsom kunt laten draaien voor een bepaalde tijd. Hiervoor gebruik ik een DC Motorcontroller die de '+' en '-' kan omdraaien en dus een motortje zo kan laten draaien (linksom of rechtsom). Hoe lang dit is, wordt uitgedrukt in milliseconden, maar de interface maakt het mogelijk om percentages te kiezen. Waarbij we een waarde vaststellen voor hoe lang draaien 100% is en vanuit daar dus een percentage omzetten naar een aantal milliseconden. Dus stel we stellen de 100% waarde in op 2000 ms draaien, dan is 50% dus 1000 ms draaien. Het aansturen hiervan gebeurt via een website die gehost wordt door een webserver op de ESP32/Arduino, of via Google Assistent -> IFTTT -> Adafruit -> MQTT -> ESP32/Arduino.
