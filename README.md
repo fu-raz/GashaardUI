@@ -1,5 +1,6 @@
 # GashaardUI
 Gemaakt door Rick van Modem - Fluffy Media
+
 Met een kleine dank aan Jerry Schun die mij m'n eerste Arduino opstuurde.
 
 ## Waarom heb ik dit gemaakt?
@@ -22,7 +23,7 @@ Ik heb veel uit de standaard examples en bij Pangolin bijgeleverde examples geha
 ## Nog wat geleerd?
 Ik kwam er al vrij snel achter dat delay(), hoewel veel gebruikt, echt een hatelijke functie is. Blijkbaar was dat algemene kennis, want nadat ik klaar was met mijn oplossing ervoor, werd ik doorgestuurd naar de 'Blink without delay' example. Blijkbaar waren er meer mensen.
 
-De standaard MQTT library die iedereen gebruikte maakte ook gebruik van delay, waardoor mijn code niet meer werkte. Daarom heb ik deze vervangen met een asynchrone library. Echter kwam ik er snel achter dat één gebruiker van die library het er echt niet mee eens was, omdat hij echt helemaal niet goed geprogrammeerd bleek te zijn. Hij heeft zelf de library gedeeltelijk herschreven.
+De standaard MQTT library die iedereen gebruikte maakte ook gebruik van delay, waardoor mijn code niet meer werkte. Daarom heb ik deze vervangen met een asynchrone library [asyncMQTTClient](https://github.com/marvinroger/async-mqtt-client). Echter kwam ik er snel achter dat één gebruiker van die library het er echt niet mee eens was, omdat hij echt helemaal niet goed geprogrammeerd bleek te zijn. [Hier](https://github.com/marvinroger/async-mqtt-client/issues/193) lees je zijn grappige issue met de hele library. Hij heeft zelf de library gedeeltelijk herschreven, waar hij nog een paar keer uithaald naar hoe achterlijk die andere library wel niet gemaakt was. Arme Marvin Roger. Doet ie zo z'n best.
 
 ## TODO's
 * Ik wil de webserver ook asynchroon maken. Hier is een mooie library voor, die wil ik uiteindelijk gaan gebruiken. Om maar te zorgen dat die loop zo leeg mogelijk blijft.
